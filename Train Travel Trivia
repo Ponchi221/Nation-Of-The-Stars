@@ -1,0 +1,29 @@
+import random
+
+def train_travel_trivia():
+print("Welcome to the Train Travel Trivia!")
+print("Answer the following questions about trains and test your knowledge.")
+
+questions = {
+"What is the fastest operational high-speed train in the world?": "Shanghai Maglev",
+"Which country boasts the longest railway network in the world?": "United States",
+"What is the record for the longest non-stop train journey? (in kilometers)": "Trans-Siberian Railway",
+"In which year did the first commercial steam locomotive operate?": "1804"
+# 
+}
+
+score = 0
+question_list = list(questions.keys())
+random.shuffle(question_list) # 
+for question in question_list:
+print(question)
+user_answer = input("Your answer: ").capitalize()
+if user_answer == questions[question]:
+print("Correct! You answered the question correctly.")
+score += 1
+else:
+print(f"Incorrect. The correct answer is '{questions[question]}'.")
+
+print("The Train Travel Trivia is over! Your final score is:", score)
+
+train_travel_trivia()
