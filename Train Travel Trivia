@@ -20,7 +20,7 @@ print(question)
 user_answer = input("Your answer: ").capitalize()
 if user_answer == questions[question]:
 print("Correct! You answered the question correctly.")
-score += 1
+score += 3
 else:
 print(f"Incorrect. The correct answer is '{questions[question]}'.")
 
