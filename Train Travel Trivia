@@ -12,7 +12,7 @@ questions = {
 # 
 }
 
-score = 0
+score = 01
 question_list = list(questions.keys())
 random.shuffle(question_list) # 
 for question in question_list:
